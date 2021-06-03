@@ -1,11 +1,17 @@
 #include <iostream>
-#include "include/Matrix.h"
-#include "include/CMatrix.h"
+#include "Matrix.h"
+#include "CMatrix.h"
+
+#ifdef _WIN32
+  #define CLEAR "cls"
+#else
+  #define CLEAR "clear"
+#endif
 
 using namespace std;
 
 int main() {
-  system("clear");
+  system(CLEAR);
 
   char * temp1[4][4] = {
     {"he", "llo", "wo", "rld"},

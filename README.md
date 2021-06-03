@@ -1,7 +1,11 @@
 # CPP TEMPLATES HELLO WORLD
 
-## Build
+## Build / Debug
 
-```sh
-sh build.sh test
+```shell
+mkdir build
+cd build
+cmake ..
+cmake --build .
+./composition_cpp
 ```
